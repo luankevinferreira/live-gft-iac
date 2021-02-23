@@ -30,6 +30,17 @@ O upload dos artefatos que compõe o site é feito em uma etapa separada da infr
 
 * `aws s3 cp site s3://live-gft-iac/ --recursive --acl 'public-read'`
 
+### Remoção
+
+Para remover a infraestrutura que foi provisionada na AWS, é necessário executar o seguinte comando:
+
+* `aws cloudformation delete-stack --stack-name live-gft-iac-aws`
+
+Para remoção completa dos recursos, precisamos apagar o conteúdo do bucket para depois deletar o bucket, pois esse conteúdo foi adicionado após a criação da infraestrutura, para isso basta rodar os seguinte comandos:
+
+* `aws s3 rm s3://live-gft-iac --recursive`
+* `aws s3 rb s3://live-gft-iac`
+
 ## Referências
 
 * [Exemplos de template CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sample-templates-services-us-west-2.html)
