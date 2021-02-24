@@ -21,6 +21,6 @@ provider "aws" {
 
 resource "aws_s3_bucket" "b" {
   bucket = "__s3bucketname__-__environment__"
-  acl    = "private"
+  acl    = "public-read"
 
 }
