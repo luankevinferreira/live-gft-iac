@@ -43,7 +43,9 @@ Para remoção completa dos recursos, precisamos apagar o conteúdo do bucket pa
 
 ## Referências
 
+* [Comandos do CloudFormation no AWS CLI](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/index.html)
 * [Exemplos de template CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/sample-templates-services-us-west-2.html)
 * [Repositório com exemplo de templates](https://github.com/awslabs/aws-cloudformation-templates)
 * [Documentação dos recursos disponíveis para CloudFormation](https://docs.aws.amazon.com/pt_br/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
 * [Trabalhar com pilhas aninhadas no CloudFormation](https://docs.aws.amazon.com/pt_br/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)
+* [Seções do template CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
