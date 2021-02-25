@@ -20,9 +20,7 @@ tal validação é feita através do seguinte comando:
 
 A publicação ou *deploy* do seu template, é o passo que efetivamente a infraestrutura que você definiu será aplicada na sua conta AWS, para fazer a publicação basta executar o seguinte comando:
 
-* `aws cloudformation deploy --template-file template.yaml --stack-name live-gft-iac-aws --s3-bucket cf-templates-live-gft`
-
-Observação: Para realizar o teste corretamente em sua conta, é necessário que exista um bucket em sua conta para o upload do template do CloudFormation, que no exemplo de comando está definido como `cf-templates-live-gft`.
+* `aws cloudformation deploy --template-file template.yaml --stack-name live-gft-iac-aws`
 
 ### Conteúdo do site
 
@@ -49,3 +47,4 @@ Para remoção completa dos recursos, precisamos apagar o conteúdo do bucket pa
 * [Documentação dos recursos disponíveis para CloudFormation](https://docs.aws.amazon.com/pt_br/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html)
 * [Trabalhar com pilhas aninhadas no CloudFormation](https://docs.aws.amazon.com/pt_br/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html)
 * [Seções do template CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)
+* [Referência de transformações](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-reference.html)
